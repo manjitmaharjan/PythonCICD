@@ -20,7 +20,7 @@ pipeline {
         
           stage("Running Unittest") {
             steps {
-                sh "/usr/local/bin/nosetests tests/test_helloworld.py"
+                sh "/home/zitflo/.local/bin/nosetests/test_helloworld.py"
                 
                 
             }
@@ -28,7 +28,7 @@ pipeline {
 
         stage("Package Installation") {
             steps {
-                sh "/usr/local/bin/pip install -r requirements.txt"
+                sh "/usr/bin/pip install -r requirements.txt"
                 
             }
           } 
