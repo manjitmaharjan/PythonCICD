@@ -20,7 +20,7 @@ pipeline {
         
           stage("Running Unittest") {
             steps {
-                sh "/usr/bin/nosetests test/test_helloworld.py"
+                sh "/usr/bin/nosetests tests/test_helloworld.py"
                 
                 
             }
