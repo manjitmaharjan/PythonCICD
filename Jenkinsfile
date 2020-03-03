@@ -20,7 +20,7 @@ pipeline {
         
           stage("Running Unittest") {
             steps {
-                sh sudo "/home/zitflo/.local/bin/nosetests/ test/test_helloworld.py"
+                sh "/home/zitflo/.local/bin/nosetests/test/test_helloworld.py"
                 
                 
             }
